@@ -41,12 +41,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              data: `@import "~@ctvoicer/ctstyle/sass/utilities/initial-variables.sass";`
-            }
-          }
+          'sass-loader'
         ]
       },
       {
