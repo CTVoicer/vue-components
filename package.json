@@ -23,11 +23,13 @@
     "dev": "NODE_ENV=development webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@ctvoicer/ctstyle": "^1.2.0",
+    "buefy": "^0.7.5"
+  },
   "devDependencies": {
-    "@ctvoicer/ctstyle": "^1.1.1",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
-    "buefy": "^0.7.5",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
