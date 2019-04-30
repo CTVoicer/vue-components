@@ -39,7 +39,7 @@ export default {
 
 .auth-overall {
   background-color: $red;
-  background-image: url('../assets/img/login-background.jpg');
+  background-image: url('../../assets/img/login-background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

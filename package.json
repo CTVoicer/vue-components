@@ -1,5 +1,5 @@
 {
-  "name": "vue-components",
+  "name": "@ctvoicer/vue-components",
   "version": "0.2.0",
   "description": "Componentes de UI para o Vue.js baseados no CTStyle.",
   "author": "CTVoicer <webmaster@ctvoicer.com.br>",
@@ -21,7 +21,8 @@
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm run build && standard-version"
   },
   "dependencies": {
     "@ctvoicer/ctstyle": "^1.2.0",
@@ -36,7 +37,9 @@
     "eslint-plugin-vue": "^5.2.2",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "^7.1.0",
+    "standard-version": "^5.0.2",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "vue": "^2.6.10",
