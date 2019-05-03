@@ -14,6 +14,7 @@
                 <strong v-t="'app_name'" />
               </div>
 
+              <!-- Conteúdo da página -->
               <slot/>
 
             </div>

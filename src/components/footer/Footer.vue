@@ -1,6 +1,6 @@
 <template>
   <footer class="has-background-primary">
-    <div :class="{ 'container': true, 'is-fluid': fluid }">
+    <div :class="['container', breakpoint]">
       <div class="has-text-centered is-copyright">
         <a :href="contactWebsite" target="_blank">{{ website }}</a><br>
         {{ copyright }}
@@ -48,9 +48,12 @@ export default {
   name: 'CtFooter',
 
   props: {
-    fluid: {
-      type: Boolean,
-      default: true
+    // Altera o breakpoint que define a largura do container
+    breakpoint: {
+      // `is-fluid` / `is-widescreen` / `is-fullhd`
+      type: String,
+      // O valor padrão é: `is-fluid`
+      default: 'is-fluid'
     }
   },
 

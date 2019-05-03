@@ -39,10 +39,14 @@ export default {
   name: 'CtLoginForm',
 
   props: {
+    // Campo `email`
     email: String,
+    // Campo `password`
     password: String,
+    // Mensagens de erro devido à validação dos campos
     errors: {
       type: Object,
+      // O valor padrão é: {}
       default () {
         return {}
       }
@@ -65,15 +69,20 @@ export default {
 
   watch: {
     'form.email' () {
+      // Atualiza o valor do campo `email`.
+      // @arg O argumento é uma `String` representando o valor inserido pelo usuário.
       this.$emit('update:email', this.form.email)
     },
     'form.password' () {
+      // Atualiza o valor do campo `password`.
+      // @arg O argumento é uma `String` representando o valor inserido pelo usuário.
       this.$emit('update:password', this.form.password)
     }
   },
 
   methods: {
     login () {
+      // Disparado quando o usuário clicar no botão `login`.
       this.$emit('login')
     }
   }
