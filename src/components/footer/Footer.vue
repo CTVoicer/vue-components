@@ -3,7 +3,8 @@
     <div :class="['container', breakpoint]">
       <div class="has-text-centered is-copyright">
         <a :href="contactWebsite" target="_blank">{{ website }}</a><br>
-        {{ copyright }}
+        {{ copyright }}<br>
+        {{ version }}
       </div>
 
       <nav class="navbar is-primary is-footer">
@@ -54,6 +55,12 @@ export default {
       type: String,
       // O valor padrão é: `is-fluid`
       default: 'is-fluid'
+    },
+    // Permite informar a versão do sistema
+    version: {
+      type: String,
+      // O valor padrão é: 'unreleased'
+      default: 'unreleased'
     }
   },
 
