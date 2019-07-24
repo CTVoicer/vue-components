@@ -11,7 +11,7 @@
             <div class="box has-padding-lg">
               <div class="has-text-centered has-margin-bottom-lg has-header-logo">
                 <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm">
-                <strong v-t="'app_name'" />
+                <strong>{{ product }}</strong>
               </div>
 
               <!-- Conteúdo da página -->
@@ -31,7 +31,15 @@
 
 <script>
 export default {
-  name: 'CtLoginPage'
+  name: 'CtLoginPage',
+
+  props: {
+    // Nome do produto que será exibido junto ao logotipo da CTVoicer.
+    product: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 

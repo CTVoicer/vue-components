@@ -53,14 +53,13 @@ export default {
     breakpoint: {
       // `is-fluid` / `is-widescreen` / `is-fullhd`
       type: String,
-      // O valor padrão é: `is-fluid`
       default: 'is-fluid'
     },
+
     // Permite informar a versão do sistema
     version: {
       type: String,
-      // O valor padrão é: 'unreleased'
-      default: 'unreleased'
+      default: 'UNRELEASED'
     }
   },
 
