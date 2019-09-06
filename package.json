@@ -1,13 +1,13 @@
 {
   "name": "@ctvoicer/vuecomponents",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Componentes de UI para o Vue.js baseados no CTStyle.",
   "author": "CTVoicer <webmaster@ctvoicer.com.br>",
   "license": "UNLICENSED",
   "main": "dist/vue-components.js",
   "repository": {
     "type": "git",
-    "url": "git@ssh.dev.azure.com:v3/CTVoicer/Vue%20Components/vue-components"
+    "url": "https://github.com/ctvoicer/vuecomponents"
   },
   "keywords": [
     "vue",

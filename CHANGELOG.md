@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/ctvoicer/vuecomponents/compare/v0.4.0...v0.4.1) (2019-09-06)
+
+
+### Bug Fixes
+
+* 🐛 Corrige o namespace do pacote ([c4d8354](https://github.com/ctvoicer/vuecomponents/commit/c4d8354))
+
+
+
 ## 0.4.0 (2019-09-06)
 
 
