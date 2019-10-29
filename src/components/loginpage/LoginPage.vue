@@ -3,20 +3,25 @@
     <div class="columns is-vcentered has-margin-none" style="height: 100vh">
       <div class="column is-12">
         <div class="has-text-centered has-margin-bottom-lg">
-          <img src="@/assets/img/ctvoicer-white.png" alt="">
+          <img src="@/assets/img/ctvoicer-white.png" alt="" />
         </div>
 
         <div class="columns is-centered">
           <div class="column is-one-quarter-desktop is-one-third-tablet">
             <div class="box has-padding-lg">
-              <div class="has-text-centered has-margin-bottom-lg has-header-logo">
-                <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm">
+              <div
+                class="has-text-centered has-margin-bottom-lg has-header-logo"
+              >
+                <img
+                  src="@/assets/img/logo.png"
+                  alt=""
+                  class="has-margin-right-sm"
+                />
                 <strong>{{ product }}</strong>
               </div>
 
               <!-- Conteúdo da página -->
-              <slot/>
-
+              <slot />
             </div>
           </div>
         </div>
@@ -31,7 +36,7 @@
 
 <script>
 export default {
-  name: 'CtLoginPage',
+  name: "CtLoginPage",
 
   props: {
     // Nome do produto que será exibido junto ao logotipo da CTVoicer.
@@ -40,7 +45,7 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -48,7 +53,7 @@ export default {
 
 .auth-overall {
   background-color: $red;
-  background-image: url('../../assets/img/login-background.jpg');
+  background-image: url("../../assets/img/login-background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

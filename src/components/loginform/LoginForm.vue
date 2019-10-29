@@ -5,12 +5,15 @@
       :label="email_label"
       :message="errors.email || errors.email"
       :type="errors.email ? 'is-danger' : ''"
-      :custom-class="errors.email ? 'has-text-danger' : ''">
+      :custom-class="errors.email ? 'has-text-danger' : ''"
+    >
       <b-input
-        type="email" icon="user"
+        type="email"
+        icon="user"
         :placeholder="email_placeholder"
         v-model="form.email"
-        autofocus />
+        autofocus
+      />
     </b-field>
 
     <b-field
@@ -18,26 +21,30 @@
       :label="password_label"
       :message="errors.password || errors.password"
       :type="errors.password ? 'is-danger' : ''"
-      :custom-class="errors.password ? 'has-text-danger' : ''">
+      :custom-class="errors.password ? 'has-text-danger' : ''"
+    >
       <b-input
-        type="password" icon="lock"
+        type="password"
+        icon="lock"
         :placeholder="password_placeholder"
         v-model="form.password"
-        password-reveal />
+        password-reveal
+      />
     </b-field>
 
     <button
       type="submit"
       class="button is-fullwidth is-danger has-margin-bottom-sm"
-      @click.prevent="login()">
+      @click.prevent="login()"
+    >
       {{ login_label }}
-      </button>
+    </button>
   </form>
 </template>
 
 <script>
 export default {
-  name: 'CtLoginForm',
+  name: "CtLoginForm",
 
   props: {
     // Campo `email`
@@ -45,72 +52,72 @@ export default {
     // Label do campo de endereço de e-mail
     email_label: {
       type: String,
-      default: 'E-mail address'
+      default: "E-mail address"
     },
     // Placeholder do campo de endereço de e-mail
     email_placeholder: {
       type: String,
-      default: 'Your email address'
+      default: "Your email address"
     },
     // Campo `password`
     password: String,
     // Label do campo de senha
     password_label: {
       type: String,
-      default: 'Password'
+      default: "Password"
     },
     // Placeholder do campo de senha
     password_placeholder: {
       type: String,
-      default: 'Your access password'
+      default: "Your access password"
     },
     // Label do botão de login
     login_label: {
       type: String,
-      default: 'Login'
+      default: "Login"
     },
     // Mensagens de erro devido à validação dos campos
     errors: {
       type: Object,
       // O valor padrão é: {}
-      default () {
-        return {}
+      default() {
+        return {};
       }
     }
   },
 
-  data () {
+  data() {
     return {
       form: {
-        email: '',
-        password: ''
+        email: "",
+        password: ""
       }
-    }
+    };
   },
 
-  mounted () {
-    this.form.email = this.email
-    this.form.password = this.password
+  mounted() {
+    this.form.email = this.email;
+    this.form.password = this.password;
   },
 
   watch: {
-    'form.email' () {
+    "form.email"() {
       // Atualiza o valor do campo `email`.
       // @arg O argumento é uma `String` representando o valor inserido pelo usuário.
-      this.$emit('update:email', this.form.email)
+      this.$emit("update:email", this.form.email);
     },
-    'form.password' () {
+    "form.password"() {
       // Atualiza o valor do campo `password`.
       // @arg O argumento é uma `String` representando o valor inserido pelo usuário.
-      this.$emit('update:password', this.form.password)
+      this.$emit("update:password", this.form.password);
     }
   },
 
   methods: {
-    login () {
+    login() {
       // Disparado quando o usuário clicar no botão `login`.
-      this.$emit('login')
+      this.$emit("login");
     }
   }
-}
+};
 </script>

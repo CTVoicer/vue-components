@@ -3,7 +3,7 @@
     <div :class="['container', breakpoint]">
       <div class="navbar-brand">
         <a v-if="typeof logoLink === 'string'" class="navbar-item">
-          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm">
+          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm" />
           <strong>{{ product }}</strong>
         </a>
         <router-link
@@ -11,12 +11,13 @@
           :to="logoLink"
           active-class=""
           exact-active-class=""
-          class="navbar-item">
-          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm">
+          class="navbar-item"
+        >
+          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm" />
           <strong>{{ product }}</strong>
         </router-link>
         <div v-else class="navbar-item">
-          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm">
+          <img src="@/assets/img/logo.png" alt="" class="has-margin-right-sm" />
           <strong>{{ product }}</strong>
         </div>
 
@@ -25,7 +26,8 @@
           data-target="CtNavbarBurger"
           aria-label="menu"
           aria-expanded="false"
-          @click.prevent="toggleBurgerMenu($event)">
+          @click.prevent="toggleBurgerMenu($event)"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -42,7 +44,7 @@
 
 <script>
 export default {
-  name: 'CtNavbar',
+  name: "CtNavbar",
 
   props: {
     // Nome do produto que será exibido junto ao logotipo da CTVoicer.
@@ -56,7 +58,7 @@ export default {
       // `is-fluid` / `is-widescreen` / `is-fullhd`
       type: String,
       // O valor padrão é: `is-fluid`
-      default: 'is-fluid'
+      default: "is-fluid"
     },
 
     // Destino da URL do logotipo. Se deixado em branco, o logotipo não terá nenhum link.
@@ -67,13 +69,13 @@ export default {
   },
 
   methods: {
-    toggleBurgerMenu (event) {
-      const navbarBurger = event.currentTarget
-      const target = document.getElementById(navbarBurger.dataset.target)
+    toggleBurgerMenu(event) {
+      const navbarBurger = event.currentTarget;
+      const target = document.getElementById(navbarBurger.dataset.target);
 
-      navbarBurger.classList.toggle('is-active')
-      target.classList.toggle('is-active')
+      navbarBurger.classList.toggle("is-active");
+      target.classList.toggle("is-active");
     }
   }
-}
+};
 </script>
