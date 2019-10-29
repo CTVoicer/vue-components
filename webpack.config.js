@@ -40,29 +40,28 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
         use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
           {
-            loader: 'url-loader',
+            loader: "sass-loader",
             options: {
-              outputPath: "images",
-              name: "[name].[ext]"
+              prependData: `@import "~@ctvoicer/ctstyle/src/utilities/initial-variables";`
             }
           }
         ]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            outputPath: 'fonts',
-            name: '[name].[ext]'
-          }
-        }]
+        test: /\.svg$/,
+        use: "raw-loader"
+      },
+      {
+        test: /\.(png|jpg|gif|webp)$/,
+        loader: "url-loader",
+        options: {
+          limit: 10000,
+          name: "img/[name].[hash:7].[ext]"
+        }
       }
     ]
   },
@@ -78,9 +77,9 @@ module.exports = {
         preset: [
           "default",
           {
-          discardComments: {
-            removeAll: true
-          }
+            discardComments: {
+              removeAll: true
+            }
           }
         ]
       }

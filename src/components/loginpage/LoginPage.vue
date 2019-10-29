@@ -49,8 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~@ctvoicer/ctstyle/src/utilities/initial-variables";
-
 .auth-overall {
   background-color: $red;
   background-image: url("../../assets/img/login-background.jpg");

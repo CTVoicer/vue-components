@@ -22,42 +22,42 @@
               class="navbar-item"
               target="_blank"
               rel="nofollow"
+              :title="address"
+              :data-tooltip="address"
             >
-              <b-tooltip :label="address" type="is-dark">
-                <span
-                  class="icon has-background-white is-large is-rounded has-text-primary"
-                >
-                  <i class="fas fa-lg fa-map-marker-alt"></i>
-                </span>
-              </b-tooltip>
+              <span
+                class="icon has-background-white is-large is-rounded has-text-primary"
+              >
+                <i class="fas fa-lg fa-map-marker-alt"></i>
+              </span>
             </a>
             <a
               :href="contactEmail"
               class="navbar-item"
               target="_blank"
               rel="nofollow"
+              :title="email"
+              :data-tooltip="email"
             >
-              <b-tooltip :label="email" type="is-dark">
-                <span
-                  class="icon has-background-white is-large is-rounded has-text-primary"
-                >
-                  <i class="fas fa-lg fa-envelope"></i>
-                </span>
-              </b-tooltip>
+              <span
+                class="icon has-background-white is-large is-rounded has-text-primary"
+              >
+                <i class="fas fa-lg fa-envelope"></i>
+              </span>
             </a>
             <a
               :href="contactPhone"
               class="navbar-item"
               target="_blank"
               rel="nofollow"
+              :title="phone"
+              :data-tooltip="phone"
             >
-              <b-tooltip :label="phone" type="is-dark">
-                <span
-                  class="icon has-background-white is-large is-rounded has-text-primary"
-                >
-                  <i class="fas fa-lg fa-phone"></i>
-                </span>
-              </b-tooltip>
+              <span
+                class="icon has-background-white is-large is-rounded has-text-primary"
+              >
+                <i class="fas fa-lg fa-phone"></i>
+              </span>
             </a>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default {
     contactAddress() {
       return this.address === null
         ? ""
-        : "https://www.google.com/maps/place/" + encodeURI(this.address);
+        : "//www.google.com/maps/place/" + encodeURI(this.address);
     },
     contactEmail() {
       return this.email === null ? "" : "mailto:" + this.email;
@@ -117,8 +117,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~@ctvoicer/ctstyle/src/utilities/initial-variables";
-
 .is-footer {
   z-index: 5;
 }
