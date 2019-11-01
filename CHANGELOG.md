@@ -1,8 +1,22 @@
-# Changelog
+# Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.4.1](https://github.com/ctvoicer/vuecomponents/compare/v0.4.0...v0.4.1) (2019-09-06)
+# [1.0.0](https://github.com/ctvoicer/vue-components/compare/v0.4.1...v1.0.0) (2019-11-01)
+
+
+### Features
+
+* 🎸 Remoção completa do Buefy e CTStyle ([ce96364](https://github.com/ctvoicer/vue-components/commit/ce96364))
+
+
+### BREAKING CHANGES
+
+* Os pacotes Buefy e CTStyle foram removidos como dependência direta do projeto.
+
+
+
+## [0.4.1](https://github.com/ctvoicer/vuecomponents/compare/v0.4.0...v0.4.1) (2019-09-06)
 
 
 ### Bug Fixes
