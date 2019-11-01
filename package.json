@@ -1,6 +1,6 @@
 {
   "name": "@ctvoicer/vue-components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Componentes de UI para os produtos da CTVoicer.",
   "author": "CTVoicer <contato@ctvoicer.com.br>",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "build": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npx vuese gen && npm run build && standard-version"
+    "release": "npx vuese gen && npm run build && standard-version --message \"chore(release): 🤖 %s\""
   },
   "devDependencies": {
     "@ctvoicer/ctstyle": "^0.6.1",

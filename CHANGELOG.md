@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.1.0](https://github.com/ctvoicer/vue-components/compare/v1.0.0...v1.1.0) (2019-11-01)
+
+
+### Features
+
+* 🎸 Novo componente adicionado: DefaultImage ([7eeb353](https://github.com/ctvoicer/vue-components/commit/7eeb353))
+* 🎸 Novo componente adicionado: LoadingSpinner ([0a1f86b](https://github.com/ctvoicer/vue-components/commit/0a1f86b))
+* 🎸 Novo componente adicionado: NothingFound ([97769d3](https://github.com/ctvoicer/vue-components/commit/97769d3))
+
+
+
 # [1.0.0](https://github.com/ctvoicer/vue-components/compare/v0.4.1...v1.0.0) (2019-11-01)
 
 
