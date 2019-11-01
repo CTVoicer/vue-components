@@ -16,12 +16,12 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 
-## [0.4.1](https://github.com/ctvoicer/vuecomponents/compare/v0.4.0...v0.4.1) (2019-09-06)
+## [0.4.1](https://github.com/ctvoicer/vue-components/compare/v0.4.0...v0.4.1) (2019-09-06)
 
 
 ### Bug Fixes
 
-* 🐛 Corrige o namespace do pacote ([c4d8354](https://github.com/ctvoicer/vuecomponents/commit/c4d8354))
+* 🐛 Corrige o namespace do pacote ([c4d8354](https://github.com/ctvoicer/vue-components/commit/c4d8354))
 
 
 
@@ -30,13 +30,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* 🐛 Corrige o bug na tradução dos componentes de login ([66d8626](https://github.com/ctvoicer/vuecomponents/commit/66d8626))
+* 🐛 Corrige o bug na tradução dos componentes de login ([66d8626](https://github.com/ctvoicer/vue-components/commit/66d8626))
 
 
 ### Features
 
-* 🎸 Altera o registro dos pacotes npm ([58835aa](https://github.com/ctvoicer/vuecomponents/commit/58835aa))
-* 🎸 Implementa a propriedade 'version' ao componente Footer ([d869e9a](https://github.com/ctvoicer/vuecomponents/commit/d869e9a))
+* 🎸 Altera o registro dos pacotes npm ([58835aa](https://github.com/ctvoicer/vue-components/commit/58835aa))
+* 🎸 Implementa a propriedade 'version' ao componente Footer ([d869e9a](https://github.com/ctvoicer/vue-components/commit/d869e9a))
 
 
 
@@ -45,8 +45,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* 🎸 Adiciona o componente Footer ([f8ff8b7](https://github.com/ctvoicer/vuecomponents/commit/f8ff8b7))
-* 🎸 Adiciona o componente Navbar ([aca7d25](https://github.com/ctvoicer/vuecomponents/commit/aca7d25))
-* 🎸 Adiciona os componentes LoginPage e LoginForm ([e41315c](https://github.com/ctvoicer/vuecomponents/commit/e41315c))
-* 🎸 Instala o Webpack e as dependências do projeto ([dfe3ebe](https://github.com/ctvoicer/vuecomponents/commit/dfe3ebe))
-* 🎸 Projeto iniciado ([a187947](https://github.com/ctvoicer/vuecomponents/commit/a187947))
+* 🎸 Adiciona o componente Footer ([f8ff8b7](https://github.com/ctvoicer/vue-components/commit/f8ff8b7))
+* 🎸 Adiciona o componente Navbar ([aca7d25](https://github.com/ctvoicer/vue-components/commit/aca7d25))
+* 🎸 Adiciona os componentes LoginPage e LoginForm ([e41315c](https://github.com/ctvoicer/vue-components/commit/e41315c))
+* 🎸 Instala o Webpack e as dependências do projeto ([dfe3ebe](https://github.com/ctvoicer/vue-components/commit/dfe3ebe))
+* 🎸 Projeto iniciado ([a187947](https://github.com/ctvoicer/vue-components/commit/a187947))

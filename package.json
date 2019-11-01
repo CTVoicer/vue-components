@@ -21,7 +21,7 @@
     "build": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm run build && standard-version"
+    "release": "npx vuese gen && npm run build && standard-version"
   },
   "devDependencies": {
     "@ctvoicer/ctstyle": "^0.6.1",
