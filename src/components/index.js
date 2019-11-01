@@ -4,6 +4,7 @@ import LoadingSpinner from "./loading-spinner/LoadingSpinner.vue";
 import LoginForm from "./loginform/LoginForm.vue";
 import LoginPage from "./loginpage/LoginPage.vue";
 import Navbar from "./navbar/Navbar.vue";
+import NothingFound from "./nothing-found/NothingFound.vue";
 
 export {
   DefaultImage,
@@ -11,5 +12,6 @@ export {
   LoadingSpinner,
   LoginForm,
   LoginPage,
-  Navbar
+  Navbar,
+  NothingFound
 };
